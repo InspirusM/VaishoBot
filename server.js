@@ -55,9 +55,8 @@ client.on("message", async message => {
   
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
-  if (!message.content.startsWith(prefix)) return;
   const prefix = client.prefix;
-  
+  if (!message.content.startsWith(prefix)) return;
   
   var args2 = message.content.substring(prefix.length).split(" ");
   var searchString = args2.slice(1).join(' ');
