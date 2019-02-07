@@ -1,13 +1,6 @@
 exports.run = async client => {
 
-  client.user.setPresence({
-        game: {
-            name: `%help | v2 Released`,
-            type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
-        }
-    });
-  console.log(`${client.user.username} Is Ready To Serve ${client.guilds.size} Server And ${client.users.size} Users`);
-
+  console.log(`${client.user.username} is online on ${client.guilds.size} servers!`);
+  client.user.setActivity(`${client.prefix}help | Music`, {type: "LISTENING"});
   
 }
