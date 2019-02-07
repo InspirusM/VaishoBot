@@ -13,6 +13,7 @@ client.queue = queue;
 client.prefix = '%';
 client.fetch = require('node-superfetch');
 
+
 //event handler
 fs.readdir("./events/", (err, files) => {
 if (err) console.log(err);
