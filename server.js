@@ -46,11 +46,6 @@ fs.readdir("./commands/", (err, files) => {
 
 client.on('error', console.error);
 
-client.on("ready", async () => {
-  console.log(`${client.user.username} is online on ${client.guilds.size} servers!`);
-  client.user.setActivity(`${client.prefix}help | Music`, {type: "LISTENING"});
-});
-
 client.on("message", async message => {
   
   if(message.author.bot) return;
