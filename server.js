@@ -4,9 +4,7 @@ const ytdl = require('ytdl-core');
 const youtube = new YouTube(process.env.YOUTUBE_API_KEY);
 const client = new Discord.Client();
 const fs = require("fs")
-var servers = {};
 var db = require('quick.db');
-var send = require(`quick.hook`);
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
